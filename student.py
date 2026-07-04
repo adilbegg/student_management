@@ -57,16 +57,17 @@ class Student:
        return Student(student_id=student_id, name=name, age=int(age), course=course, marks=marks)
 
 
-if __name__ == '__main__':
- s = Student('SMS-0001', 'Aisha', 20, 'CS', {'Maths': 44, 'English': 44})
- print(s.student_id, s.name, s.marks)
- print(s.get_percentage())
- print(s.get_grade())
- print(s.is_passing())
- print(s)
+# if __name__ == '__main__':
+ 
+#  s = Student('SMS-0001', 'Aisha', 20, 'CS', {'Maths': 44, 'English': 44})
+#  print(s.student_id, s.name, s.marks)
+#  print(s.get_percentage())
+#  print(s.get_grade())
+#  print(s.is_passing())
+#  print(s)
 
-row = s.to_csv_row()
-print(row)
+# row = s.to_csv_row()
+# print(row)
 
-s2 = Student.from_csv_row(row)
-print(s2.name, s2.marks)
+# s2 = Student.from_csv_row(row)
+# print(s2.name, s2.marks)

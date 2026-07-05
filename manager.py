@@ -92,8 +92,8 @@ class StudentManager():
                     ["Name", student.name],
                     ["Age", student.age],
                     ["Course", student.course],
-                    ["Percentage", f"{student.get_percentage():.2f}"],
-                    ["Grade", student.get_grade() if student.marks else "-"]
+                    # ["Percentage", f"{student.get_percentage():.2f}"],
+                    # ["Grade", student.get_grade() if student.marks else "-"]
                     ]
        print(tabulate(info_rows,headers=["Field", "Value"], tablefmt="grid"))
 
@@ -103,7 +103,7 @@ class StudentManager():
           print(tabulate(marks_rows, headers=["Subject", "Marks"], tablefmt= "grid"))
 
     def display_report_card(self, student_id):
-       print(f"Student ID: {student_id}")
+       #print(f"Student ID: {student_id}")
 
        student = self.find_by_id(student_id)
 
